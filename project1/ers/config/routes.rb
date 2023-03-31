@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'reimbursements/index'
+  get 'reimbursements/create'
+  get 'reimbursements/show'
+  get 'reimbursements/update'
+  get 'reimbursements/delete'
   get 'sessions/create'
   get 'reimbursements/index'
   get 'reimbursements/create'

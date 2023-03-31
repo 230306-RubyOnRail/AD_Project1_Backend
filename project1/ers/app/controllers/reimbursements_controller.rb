@@ -5,7 +5,7 @@ class ReimbursementsController < ApplicationController
   def create
   end
 
-  def sow
+  def show
   end
 
   def update

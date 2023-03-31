@@ -11,8 +11,8 @@ class ReimbursementsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get sow" do
-    get reimbursements_sow_url
+  test "should get show" do
+    get reimbursements_show_url
     assert_response :success
   end
 
