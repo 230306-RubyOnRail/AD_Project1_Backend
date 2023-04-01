@@ -11,7 +11,9 @@ default: &default
 
 development:
   <<: *default
-  database: db/development.sqlite3
+  database: postgres
+  username: ruby_app_ers
+  password: ruby_secret_ad
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

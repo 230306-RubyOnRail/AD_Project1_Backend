@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-require_relative '../../../lib/json_web_token'
+require_relative '../../../lib/tasks/json_web_token'
 
 module Authenticatable
   extend ActiveSupport::Concern
