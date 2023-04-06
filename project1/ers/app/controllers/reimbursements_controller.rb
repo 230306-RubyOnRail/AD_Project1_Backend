@@ -14,7 +14,7 @@ class ReimbursementsController < ApplicationController
     data = JSON.parse(request.body.read)
     reim_id = data[:id]
     data[:user_id] = current_user.id
-    data[:status] = "false"
+    data[:status] = "Pending"
     @reimbursement = Reimbursement.new(data)
     if @reimbursement.user_id != current_user.id
       render json: { error: 'You are not authorized to create this reimbursement' }, status: :unauthorized
