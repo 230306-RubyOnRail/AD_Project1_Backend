@@ -5,7 +5,7 @@ module Authenticatable
 
   included do
     before_action :authenticate_request!
-    before_action :authorized!
+    # before_action :authorized!
     attr_reader :current_user
   end
 
@@ -36,14 +36,16 @@ module Authenticatable
   end
 
   def authorized?
-    return true if @current_user.role == 'admin'
-
-    case action_name
-    when 'index', 'show', 'create' # auth'd actions
+    if @current_user.role == 'admin'
+      puts "User has admin permissions"
       return true
-    when 'update', 'destroy' #unauth'd actions
-      return false if @current_user.role == 'employee'
     end
-    false
+    # case action_name
+    # when 'index', 'show', 'create' # auth'd actions
+    #   return true
+    # when 'update', 'destroy' #unauth'd actions
+    #   return false if @current_user.role == 'employee'
+    # end
+    # false
   end
 end
