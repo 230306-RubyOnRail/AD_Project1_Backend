@@ -1,4 +1,4 @@
-require_relative '../../lib/tasks/json_web_token'
+require_relative './concerns/json_web_token'
 
 class SessionsController < ApplicationController
 
@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     if user&.authenticate(credentials['password'])
       render json: { token: JsonWebToken.encode(user_id: user.id), user_id: user.id}, status: :created
     else
-      head :unauthorized
+      render :json => { error: 'Invalid login credentials' }, status: :unauthorized
     end
   end
 end

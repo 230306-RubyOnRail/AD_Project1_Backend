@@ -1,5 +1,4 @@
-# frozen_string_literal: true
-require_relative '../../../lib/tasks/json_web_token'
+require_relative './json_web_token'
 
 module Authenticatable
   extend ActiveSupport::Concern
@@ -13,10 +12,17 @@ module Authenticatable
 
   def authenticate_request!
     token_data = JsonWebToken.decode(token)
-    puts token_data.inspect
-    @current_user = User.find(JsonWebToken.decode(token)['user_id'])
-    render json: { error: 'Not Authorized' }, status: 401 unless current_user
-    render json: { error: 'You are not allowed to perform this action' }, status: 403 unless params[:user_id] && @current_user.id == params[:user_id].to_i
+    puts "Authenticating token"
+    puts "Current user: #{token_data.inspect}"
+    if token_data == "Invalid Token"
+      render json: { error: 'Not Authorized' }, status: 401
+    elsif token_data == "Expired Token"
+      render json: { error: 'Token is expired. Please login again.' }, status: 401
+      # render json: { error: 'You are not allowed to perform this action' }, status: 403
+    else
+      @current_user = User.find(token_data['user_id'])
+      # render json: { error: 'Not Authorized' }, status: 401 unless current_user
+    end
   end
 
   def token

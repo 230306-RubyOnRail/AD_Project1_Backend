@@ -14,11 +14,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_03_191356) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "reimbursement_lists", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "reimbursements", force: :cascade do |t|
     t.string "expense_type"
     t.integer "date_of_expense"
