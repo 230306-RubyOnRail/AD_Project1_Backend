@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get '/reimbursements/showuserreims', to: 'reimbursements#showUserReims'
   delete '/reimbursements/:id', to: 'reimbursements#delete'
   # get '/reimbursements/:id', to: 'reimbursements#show'
+  post '/signup/admin', to: 'users#createAdmin'
+  post '/auth/login', to: 'sessions#create'
 
   resources :reimbursements, only: %i[ index create show update ]
 
