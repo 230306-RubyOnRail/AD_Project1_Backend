@@ -19,7 +19,7 @@ module Authenticatable
     if token_data == "Invalid Token"
       render json: { error: 'Not Authorized' }, status: 401
     elsif token_data == "Expired Token"
-      render json: { error: 'Token is expired. Please login again.' }, status: 401
+      render json: { error: 'Token is expired. Please login again.' }, status: 403
       # render json: { error: 'You are not allowed to perform this action' }, status: 403
     else
       @current_user = User.find(token_data['user_id'])

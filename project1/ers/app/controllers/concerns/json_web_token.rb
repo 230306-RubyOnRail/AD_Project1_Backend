@@ -6,8 +6,8 @@ module JsonWebToken
   end
 
   def self.decode(token)
-    expiredToken = "Expired Token"
-    decodeError = "Invalid Token"
+    expiredToken = 'Expired Token'
+    decodeError = 'Invalid Token'
     JWT.decode(token, Rails.application.credentials.jwt_token_secret, true, {algorithm: 'HS256'})[0]
   rescue JWT::ExpiredSignature, JWT::VerificationError => e
     return expiredToken
