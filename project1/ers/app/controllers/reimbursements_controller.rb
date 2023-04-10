@@ -28,7 +28,16 @@ class ReimbursementsController < ApplicationController
     end
   end
 
-  def show # GET /reimbursements/:id
+  def show
+    @reimbursement = Reimbursement.find(params[:id])
+    if @reimbursement.nil?
+      render json: { error: 'Not Found' }, status: :not_found
+    else
+      render json: @reimbursement
+    end
+  end
+
+  def showUserReims # GET /reimbursements/:id
     @reimbursement = Reimbursement.where(user_id: @current_user.id)
     if @reimbursement.nil?
       render json: { error: 'Not Found' }, status: :not_found

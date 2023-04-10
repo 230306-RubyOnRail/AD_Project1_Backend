@@ -12,6 +12,7 @@ module Authenticatable
   private
 
   def authenticate_request!
+    puts "Token: #{token}"
     token_data = JsonWebToken.decode(token)
     puts "Authenticating token"
     puts "Current user: #{token_data.inspect}"
