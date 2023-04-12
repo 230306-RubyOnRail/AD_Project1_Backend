@@ -1,7 +1,4 @@
 class Reimbursement < ApplicationRecord
-  belongs_to :user
+  belongs_to :user # Reimbursements belong to users, users have many reimbursements
 
-  # def reimbursement_path(reimbursement)
-  #   "/reimbursements/#{reimbursement.id}"
-  # end
 end
