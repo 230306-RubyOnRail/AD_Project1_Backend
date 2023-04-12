@@ -7,12 +7,10 @@ Rails.application.routes.draw do
   post '/signup', to: 'users#create'
   post '/auth/login', to: 'sessions#create'
   get '/reimbursements/showuserreims', to: 'reimbursements#showUserReims'
-  delete '/reimbursements/:id', to: 'reimbursements#delete'
-  # get '/reimbursements/:id', to: 'reimbursements#show'
-  post '/signup/admin', to: 'users#createAdmin'
-  post '/auth/login', to: 'sessions#create'
+  delete '/reimbursements/:id', to: 'reimbursements#delete' # Wouldnt work in resources for some reason during development. This just works so its left alone
+  post '/signup/admin', to: 'admins#create' # Admin creation has a separate controller, so it can require a token of another admin
 
-  resources :reimbursements, only: %i[ index create show update ]
+  resources :reimbursements, only: %i[ index create show update ] # Just /reimbursements, use get, post, etc. appropriately to specify method along with /id when needed
 
   # resources :users, except: %i[index show update delete] do
   #   resources :reimbursements, only: %i[ index show create update delete ]
