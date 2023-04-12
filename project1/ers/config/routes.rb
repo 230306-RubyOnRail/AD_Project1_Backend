@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 #   get 'reimbursements', to: "reimbursements#show"
 #   put 'reimbursements', to: "reimbursements#put"
 #   delete 'reimbursements', to: "reimbursements#delete"
-  post '/signup', to: 'users#create'
+  post '/signup/employee', to: 'users#createEmployee'
   post '/auth/login', to: 'sessions#create'
   get '/reimbursements/showuserreims', to: 'reimbursements#showUserReims'
   delete '/reimbursements/:id', to: 'reimbursements#delete'
