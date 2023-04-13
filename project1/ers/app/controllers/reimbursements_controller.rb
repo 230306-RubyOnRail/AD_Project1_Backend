@@ -97,6 +97,7 @@ class ReimbursementsController < ApplicationController
       return true
     else
       Rails.logger.info("Ownership check: User does not own chosen reimbursement")
+      return false
     end
   end
 end

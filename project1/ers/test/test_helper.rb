@@ -19,9 +19,9 @@ class ActiveSupport::TestCase
     return token
   end
 
-  # def testReim(user_id)
-  #   reim = Reimbursement.create(expense_type: 'Test', date_of_expense: 1, status: 'Pending', amount: 10, user_id: user_id)
-  #   id = reim.id
-  #   return id
-  # end
+  def testReim(user_id)
+    reim = Reimbursement.create(expense_type: 'Test', date_of_expense: 1, status: 'Pending', user_id: user_id)
+    id = reim.id
+    return id
+  end
 end
