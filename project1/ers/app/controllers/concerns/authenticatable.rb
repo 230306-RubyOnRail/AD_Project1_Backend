@@ -35,10 +35,4 @@ module Authenticatable
     request.headers['Authorization'].split(' ').last if request.headers['Authorization'].present?
   end
 
-  # Will authorize based on Role
-  def authorized!
-    Rails.logger.info("Authorization: Checking")
-    render json: { error: 'You are not authorized to perform this action' }, status: :forbidden unless authorized?
-  end
-
 end

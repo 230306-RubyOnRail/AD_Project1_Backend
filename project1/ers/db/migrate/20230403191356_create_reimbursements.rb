@@ -5,6 +5,7 @@ class CreateReimbursements < ActiveRecord::Migration[7.0]
       t.integer :date_of_expense
       t.string :additional_comments
       t.string :status
+      t.integer :amount
       t.references :user, null: false, foreign_key: {to_table: :users}
 
       t.timestamps
