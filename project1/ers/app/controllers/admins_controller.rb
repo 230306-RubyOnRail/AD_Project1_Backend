@@ -1,4 +1,5 @@
 class AdminsController < ApplicationController
+  # self.table_name = "users"
   include Authenticatable
   def create # This is in a separate controller so it can include Auth, this should only be called by an admin creating another admin account
     Rails.logger.debug("Users: Admin signup begun")

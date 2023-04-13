@@ -1,15 +1,17 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-reim1:
-  expense_type: "Travel"
-  date_of_expense: 1 # since date is saved in epoch unix time this is fine for testing
-  additional_comments: "Traveled for client meeting"
-  status: "Pending"
-  user: user1
-
-reim2:
-  expense_type: "Supplies"
-  date_of_expense: 1
-  additional_comments: "Supplies for the office"
-  status: "Pending"
-  user: user2
+#reim1:
+#  id: 1
+#  expense_type: "Travel"
+#  date_of_expense: 1 # since date is saved in epoch unix time this is fine for testing
+#  additional_comments: "Traveled for client meeting"
+#  status: "Pending"
+#  user: 1
+#
+#reim2:
+#  id: 2
+#  expense_type: "Supplies"
+#  date_of_expense: 1
+#  additional_comments: "Supplies for the office"
+#  status: "Pending"
+#  user: 2
