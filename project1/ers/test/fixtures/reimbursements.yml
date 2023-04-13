@@ -1,15 +1,15 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  expense_type: MyString
-  date_of_expense: 1
-  additional_comments: MyString
-  status: MyString
-  user: one
+reim1:
+  expense_type: "Travel"
+  date_of_expense: 1 # since date is saved in epoch unix time this is fine for testing
+  additional_comments: "Traveled for client meeting"
+  status: "Pending"
+  user: user1
 
-two:
-  expense_type: MyString
+reim2:
+  expense_type: "Supplies"
   date_of_expense: 1
-  additional_comments: MyString
-  status: MyString
-  user: two
+  additional_comments: "Supplies for the office"
+  status: "Pending"
+  user: user2
