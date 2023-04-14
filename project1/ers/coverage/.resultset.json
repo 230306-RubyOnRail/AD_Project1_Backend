@@ -1,7 +1,7 @@
 {
   "Minitest": {
     "coverage": {
-      "C:/Users/Kevin/Documents/Work/Revature/repos/AD_Project1_Backend/project1/ers/config/environment.rb": {
+      "C:/Users/a_mar/OneDrive/Desktop/AD_Project1_Backend/project1/ers/config/environment.rb": {
         "lines": [
           null,
           1,
@@ -10,7 +10,7 @@
           1
         ]
       },
-      "C:/Users/Kevin/Documents/Work/Revature/repos/AD_Project1_Backend/project1/ers/config/application.rb": {
+      "C:/Users/a_mar/OneDrive/Desktop/AD_Project1_Backend/project1/ers/config/application.rb": {
         "lines": [
           1,
           null,
@@ -41,7 +41,7 @@
           null
         ]
       },
-      "C:/Users/Kevin/Documents/Work/Revature/repos/AD_Project1_Backend/project1/ers/config/environments/test.rb": {
+      "C:/Users/a_mar/OneDrive/Desktop/AD_Project1_Backend/project1/ers/config/environments/test.rb": {
         "lines": [
           1,
           null,
@@ -105,7 +105,7 @@
           null
         ]
       },
-      "C:/Users/Kevin/Documents/Work/Revature/repos/AD_Project1_Backend/project1/ers/config/initializers/cors.rb": {
+      "C:/Users/a_mar/OneDrive/Desktop/AD_Project1_Backend/project1/ers/config/initializers/cors.rb": {
         "lines": [
           null,
           null,
@@ -125,7 +125,7 @@
           null
         ]
       },
-      "C:/Users/Kevin/Documents/Work/Revature/repos/AD_Project1_Backend/project1/ers/config/initializers/filter_parameter_logging.rb": {
+      "C:/Users/a_mar/OneDrive/Desktop/AD_Project1_Backend/project1/ers/config/initializers/filter_parameter_logging.rb": {
         "lines": [
           null,
           null,
@@ -137,41 +137,13 @@
           null
         ]
       },
-      "C:/Users/Kevin/Documents/Work/Revature/repos/AD_Project1_Backend/project1/ers/config/initializers/inflections.rb": {
+      "C:/Users/a_mar/OneDrive/Desktop/AD_Project1_Backend/project1/ers/config/initializers/inflections.rb": {
         "lines": [
           null,
           null,
           null,
           null,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "C:/Users/Kevin/Documents/Work/Revature/repos/AD_Project1_Backend/project1/ers/config/routes.rb": {
-        "lines": [
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
           null,
           null,
           null,
@@ -185,7 +157,35 @@
           null
         ]
       },
-      "C:/Users/Kevin/Documents/Work/Revature/repos/AD_Project1_Backend/project1/ers/test/controllers/reimbursements_controller_test.rb": {
+      "C:/Users/a_mar/OneDrive/Desktop/AD_Project1_Backend/project1/ers/config/routes.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "C:/Users/a_mar/OneDrive/Desktop/AD_Project1_Backend/project1/ers/test/controllers/reimbursements_controller_test.rb": {
         "lines": [
           1,
           null,
@@ -223,7 +223,6 @@
           null,
           null,
           1,
-          null,
           1,
           1,
           1,
@@ -235,9 +234,114 @@
           null,
           null,
           1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
           null,
           1,
           1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
           1,
           1,
           1,
@@ -255,7 +359,7 @@
           null
         ]
       },
-      "C:/Users/Kevin/Documents/Work/Revature/repos/AD_Project1_Backend/project1/ers/test/controllers/sessions_controller_test.rb": {
+      "C:/Users/a_mar/OneDrive/Desktop/AD_Project1_Backend/project1/ers/test/controllers/sessions_controller_test.rb": {
         "lines": [
           1,
           null,
@@ -283,7 +387,7 @@
           null
         ]
       },
-      "C:/Users/Kevin/Documents/Work/Revature/repos/AD_Project1_Backend/project1/ers/test/controllers/users_controller_test.rb": {
+      "C:/Users/a_mar/OneDrive/Desktop/AD_Project1_Backend/project1/ers/test/controllers/users_controller_test.rb": {
         "lines": [
           1,
           null,
@@ -332,7 +436,7 @@
           null
         ]
       },
-      "C:/Users/Kevin/Documents/Work/Revature/repos/AD_Project1_Backend/project1/ers/test/models/reimbursement_test.rb": {
+      "C:/Users/a_mar/OneDrive/Desktop/AD_Project1_Backend/project1/ers/test/models/reimbursement_test.rb": {
         "lines": [
           1,
           null,
@@ -343,7 +447,7 @@
           null
         ]
       },
-      "C:/Users/Kevin/Documents/Work/Revature/repos/AD_Project1_Backend/project1/ers/test/models/user_test.rb": {
+      "C:/Users/a_mar/OneDrive/Desktop/AD_Project1_Backend/project1/ers/test/models/user_test.rb": {
         "lines": [
           1,
           null,
@@ -354,22 +458,23 @@
           null
         ]
       },
-      "C:/Users/Kevin/Documents/Work/Revature/repos/AD_Project1_Backend/project1/ers/app/models/reimbursement.rb": {
+      "C:/Users/a_mar/OneDrive/Desktop/AD_Project1_Backend/project1/ers/app/models/reimbursement.rb": {
         "lines": [
+          1,
           1,
           1,
           null,
           null
         ]
       },
-      "C:/Users/Kevin/Documents/Work/Revature/repos/AD_Project1_Backend/project1/ers/app/models/application_record.rb": {
+      "C:/Users/a_mar/OneDrive/Desktop/AD_Project1_Backend/project1/ers/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "C:/Users/Kevin/Documents/Work/Revature/repos/AD_Project1_Backend/project1/ers/app/models/user.rb": {
+      "C:/Users/a_mar/OneDrive/Desktop/AD_Project1_Backend/project1/ers/app/models/user.rb": {
         "lines": [
           1,
           1,
@@ -385,99 +490,157 @@
           null
         ]
       },
-      "C:/Users/Kevin/Documents/Work/Revature/repos/AD_Project1_Backend/project1/ers/app/controllers/users_controller.rb": {
+      "C:/Users/a_mar/OneDrive/Desktop/AD_Project1_Backend/project1/ers/app/controllers/reimbursements_controller.rb": {
         "lines": [
           1,
+          1,
+          1,
+          2,
+          2,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
           null,
           1,
           2,
           2,
           2,
           2,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "C:/Users/Kevin/Documents/Work/Revature/repos/AD_Project1_Backend/project1/ers/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "C:/Users/Kevin/Documents/Work/Revature/repos/AD_Project1_Backend/project1/ers/app/controllers/admins_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          3,
-          3,
           2,
           2,
           2,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "C:/Users/Kevin/Documents/Work/Revature/repos/AD_Project1_Backend/project1/ers/app/controllers/concerns/authenticatable.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          7,
-          4,
-          4,
-          null,
-          null,
-          null,
-          1,
           2,
-          2,
-          null,
-          null,
-          1,
-          null,
-          1,
-          9,
-          9,
-          9,
-          9,
-          9,
-          1,
-          8,
+          0,
           0,
           null,
-          8,
+          2,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
           null,
           null,
           null,
           1,
+          3,
+          3,
+          3,
+          2,
+          2,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          4,
+          4,
+          null,
+          4,
+          3,
+          3,
+          2,
+          2,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          3,
+          3,
+          null,
+          3,
+          2,
+          2,
+          2,
+          2,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          10,
+          4,
+          4,
+          null,
+          6,
+          6,
+          null,
+          null,
+          null
+        ]
+      },
+      "C:/Users/a_mar/OneDrive/Desktop/AD_Project1_Backend/project1/ers/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "C:/Users/a_mar/OneDrive/Desktop/AD_Project1_Backend/project1/ers/app/controllers/concerns/authenticatable.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          11,
+          6,
+          6,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          null,
+          1,
+          21,
+          21,
+          21,
+          21,
+          21,
+          3,
+          18,
+          0,
+          null,
           18,
           null,
           null,
+          null,
+          1,
+          42,
+          null,
+          null,
           null
         ]
       },
-      "C:/Users/Kevin/Documents/Work/Revature/repos/AD_Project1_Backend/project1/ers/app/controllers/concerns/json_web_token.rb": {
+      "C:/Users/a_mar/OneDrive/Desktop/AD_Project1_Backend/project1/ers/app/controllers/concerns/json_web_token.rb": {
         "lines": [
           1,
           null,
@@ -488,21 +651,21 @@
           null,
           null,
           1,
-          9,
-          9,
-          9,
-          9,
+          21,
+          21,
+          21,
+          21,
           null,
           0,
           null,
           null,
-          1,
+          3,
           null,
           null,
           null
         ]
       },
-      "C:/Users/Kevin/Documents/Work/Revature/repos/AD_Project1_Backend/project1/ers/app/controllers/sessions_controller.rb": {
+      "C:/Users/a_mar/OneDrive/Desktop/AD_Project1_Backend/project1/ers/app/controllers/sessions_controller.rb": {
         "lines": [
           1,
           null,
@@ -523,114 +686,51 @@
           null
         ]
       },
-      "C:/Users/Kevin/Documents/Work/Revature/repos/AD_Project1_Backend/project1/ers/app/controllers/reimbursements_controller.rb": {
+      "C:/Users/a_mar/OneDrive/Desktop/AD_Project1_Backend/project1/ers/app/controllers/users_controller.rb": {
         "lines": [
           1,
+          null,
           1,
-          1,
+          2,
+          2,
           2,
           2,
           1,
           1,
-          1,
           null,
           1,
           1,
           null,
           null,
+          null
+        ]
+      },
+      "C:/Users/a_mar/OneDrive/Desktop/AD_Project1_Backend/project1/ers/app/controllers/admins_controller.rb": {
+        "lines": [
+          1,
           null,
           1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          1,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
           1,
           3,
           3,
-          null,
-          3,
           2,
           2,
           2,
-          2,
+          1,
+          1,
           null,
           1,
           1,
           null,
           null,
-          null,
-          1,
-          3,
           1,
           1,
-          null,
-          2,
-          2,
           null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1681430114
+    "timestamp": 1681436070
   }
 }

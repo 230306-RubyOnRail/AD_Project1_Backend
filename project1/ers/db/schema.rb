@@ -16,6 +16,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_03_191356) do
     t.integer "date_of_expense"
     t.string "additional_comments"
     t.string "status"
+    t.integer "amount"
     t.integer "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
