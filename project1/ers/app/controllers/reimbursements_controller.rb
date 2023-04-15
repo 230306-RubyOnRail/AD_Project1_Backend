@@ -28,7 +28,7 @@ class ReimbursementsController < ApplicationController
         render json: { message: 'Reimbursement created'}, status: :created
         Rails.logger.info("Create action: Data successfully added to table")
       else
-        render json: { message: 'Invalid reimbursement creation' } # If user input is somehow very wrong
+        render json: { message: 'Invalid reimbursement creation' }, status: :unprocessable_entity # If user input is somehow very wrong
         Rails.logger.error("Create action: Input was invalid")
       end
     end
@@ -37,24 +37,19 @@ class ReimbursementsController < ApplicationController
   def show # GET /reimbursements
     Rails.logger.info("Show action: Called") # Retrieves a single reimbursement based on ID
     @reimbursement = Reimbursement.find(params[:id])
-    if @reimbursement.nil? # If reimbursement isnt found, returns a 404
-      render json: { error: 'Not Found' }, status: :not_found
-      Rails.logger.error("Show action: Reimbursement not found in the database")
-    else
-      render json: @reimbursement
+    if owns? || authorized?
+      render json: @reimbursement, status: :ok
       Rails.logger.info("Show action: Reimbursement displayed")
+    else
+      render json: { error: "Unauthorized: You don't own this reimbursement" }, status: :unauthorized
+      Rails.logger.warn("Show action: Unauthorized access")
     end
   end
 
   def showUserReims # GET /reimbursements/showuserreims
     @reimbursement = Reimbursement.where(user_id: @current_user.id) # This retrieves all of a users reimbursements, without supplying an id. Works off of token. Used on homepage
-    if @reimbursement.nil?
-      render json: { error: 'Not Found' }, status: :not_found
-      Rails.logger.warn("ShowUserReims action: User does not have any reimbursements in the database")
-    else
-      render json: @reimbursement
-      Rails.logger.info("ShowUserReims action: Reimbursements displayed")
-    end
+    render json: @reimbursement, status: :ok
+    Rails.logger.info("ShowUserReims action: Reimbursements displayed")
   end
 
   def update #PUT/PATCH /reimbursements/:id
