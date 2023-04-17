@@ -11,10 +11,20 @@ default: &default
 
 development:
   <<: *default
-  adapter: postgresql
-  database: postgres
-  username: ruby_app_ers
-  password: ruby_secret_ad
+  host: <%= ENV['RDS_URL'] %>
+  port: <%= ENV['RDS_PORT'] %>
+  adapter: <%= ENV['RDS_ADAPTER'] %>
+  database: <%= ENV['RDS_DATABASE'] %>
+  username: <%= ENV['RDS_ROLE_USERNAME'] %>
+  password: <%= ENV['RDS_ROLE_PASS'] %>
+
+#  docker localhost database:
+#  adapter: postgresql
+#  database: postgres
+#  username: ruby_app_ers
+#  password: ruby_secret_ad
+
+# ad-revature-ers.cuwlbds8qf9w.us-east-2.rds.amazonaws.com
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
