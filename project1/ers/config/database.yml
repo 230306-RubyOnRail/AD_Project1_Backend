@@ -11,18 +11,18 @@ default: &default
 
 development:
   <<: *default
-  host: ad-revature-ers.cuwlbds8qf9w.us-east-2.rds.amazonaws.com
-  port: 5432
-  adapter: postgresql
-  database: postgres
-  username: ad_ers_ruby
-  password: ruby_secret_ad
-#  host: <%= ENV['RDS_URL'] %>
-#  port: <%= ENV['RDS_PORT'] %>
-#  adapter: <%= ENV['RDS_ADAPTER'] %>
-#  database: <%= ENV['RDS_DATABASE'] %>
-#  username: <%= ENV['RDS_ROLE_USERNAME'] %>
-#  password: <%= ENV['RDS_ROLE_PASS'] %>
+#  host: ad-revature-ers.cuwlbds8qf9w.us-east-2.rds.amazonaws.com
+#  port: 5432
+#  adapter: postgresql
+#  database: postgres
+#  username: ad_ers_ruby
+#  password: ruby_secret_ad
+  host: <%= ENV['RDS_URL'] %>
+  port: <%= ENV['RDS_PORT'] %>
+  adapter: <%= ENV['RDS_ADAPTER'] %>
+  database: <%= ENV['RDS_DATABASE'] %>
+  username: <%= ENV['RDS_ROLE_USERNAME'] %>
+  password: <%= ENV['RDS_ROLE_PASS'] %>
 
 #  docker localhost database:
 #  adapter: postgresql
