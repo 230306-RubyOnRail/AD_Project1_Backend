@@ -48,9 +48,9 @@ jobs:
           sudo apt-get install -y tmux
           tmux new-session -d -s my-session 'bash'
           tmux send-keys -t my-session 'ssh ${{ secrets.SSH_KEY }} ubuntu@ec2-3-134-85-143.us-east-2.compute.amazonaws.com' C-m
-          yes
-          cd actions-runner/
-          sudo ./svc.sh start
+          tmux send-keys -t my-session 'yes' C-m
+          tmux send-keys -t my-session 'cd actions-runner/' C-m
+          tmux send-keys -t my-session 'sudo ./svc.sh start' C-m
 #         run: |
 #           ssh ${{ secrets.SSH_KEY }} ubuntu@ec2-3-134-85-143.us-east-2.compute.amazonaws.com
 #           yes
