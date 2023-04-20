@@ -25,11 +25,11 @@ jobs:
           gem install bundler
           cd project1/ers
           bundle install --jobs 4 --retry 3
-#       - name: Run Rubocop
-#         run: |
-#           cd project1/ers
-#           bundle exec rubocop --auto-correct
-#           continue-on-error: true
+      - name: Run Rubocop
+        run: |
+          cd project1/ers
+          bundle exec rubocop --auto-correct
+        continue-on-error: true
           
       - name: Run Unit Tests
         run: |
@@ -43,6 +43,7 @@ jobs:
     steps:
       - name: Install dependencies
         run: |
-          cd ../../../
+          cd ../../../../
+          git pull origin main
           cd /AD_Project1_Backend/project1/ers
           sudo bundle install --jobs 4 --retry 3
