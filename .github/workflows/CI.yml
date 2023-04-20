@@ -37,16 +37,30 @@ jobs:
           rails db:migrate RAILS_ENV=test
           bundle exec rails test
         continue-on-error: true
+        
+  setuprunner:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      
+      - name: SSH into Ubuntu server
+        run: |
+          ssh -i ${{ secrets.SSH_KEY }} ubuntu@ec2-3-134-85-143.us-east-2.compute.amazonaws.com
+          yes
+          
+      - name: Initializing Runner
+        run: sudo ./svc.sh start
+          
           
   deployment:
-    needs: test
+    needs: setuprunner
     runs-on: self-hosted
     steps:
-      - name: Install dependencies
+        
+      - name: Build New Image
         run: |
           cd ../../../../AD_Project1_Backend/project1/ers
           git pull origin main
           cd ../
           sudo docker build ers -t ers:Latest
-          sudo docker run -p 3000:3000 ers:Latest
           
