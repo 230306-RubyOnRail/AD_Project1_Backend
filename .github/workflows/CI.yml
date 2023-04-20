@@ -36,3 +36,12 @@ jobs:
           rails db:migrate RAILS_ENV=test
           bundle exec rails test
           continue-on-error: true
+          
+  deployment:
+    runs-on: self-hosted
+    steps:
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          cd AD_Project1_Backend/project1/ers
+          bundle install --jobs 4 --retry 3
