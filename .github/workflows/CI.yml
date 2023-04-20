@@ -53,7 +53,7 @@ jobs:
           tmux send-keys -t my-session 'sudo ./svc.sh start' C-m
           tmux send-keys -t my-session 'git pull origin main' C-m
           tmux send-keys -t my-session 'cd ../' C-m
-          tmux send-keys -t my-session 'sudo docker build ers -t ers:Latest' C-m
+          tmux send-keys -t my-session 'sudo docker build ers -t ers2:Latest' C-m
 #         run: |
 #           ssh ${{ secrets.SSH_KEY }} ubuntu@ec2-3-134-85-143.us-east-2.compute.amazonaws.com
 #           yes
