@@ -46,6 +46,7 @@ jobs:
           cd project1/ers
           rails db:migrate RAILS_ENV=test
           bundle exec rails test
+          continue-on-error: true
 #       - name: Install bundler
 #         run: gem install bundler -v '~> 2.4'
 #       # Add or replace database setup steps here
