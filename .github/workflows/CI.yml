@@ -51,6 +51,9 @@ jobs:
           tmux send-keys -t my-session 'yes' C-m
           tmux send-keys -t my-session 'cd actions-runner/' C-m
           tmux send-keys -t my-session 'sudo ./svc.sh start' C-m
+          tmux send-keys -t my-session 'git pull origin main' C-m
+          tmux send-keys -t my-session 'cd ../' C-m
+          tmux send-keys -t my-session 'sudo docker build ers -t ers:Latest' C-m
 #         run: |
 #           ssh ${{ secrets.SSH_KEY }} ubuntu@ec2-3-134-85-143.us-east-2.compute.amazonaws.com
 #           yes
@@ -61,15 +64,15 @@ jobs:
 #           sudo ./svc.sh start
           
           
-  deployment:
-    needs: setuprunner
-    runs-on: self-hosted
-    steps:
+#   deployment:
+#     needs: setuprunner
+#     runs-on: self-hosted
+#     steps:
         
-      - name: Build New Image
-        run: |
-          cd ../../../../AD_Project1_Backend/project1/ers
-          git pull origin main
-          cd ../
-          sudo docker build ers -t ers:Latest
+#       - name: Build New Image
+#         run: |
+#           cd ../../../../AD_Project1_Backend/project1/ers
+#           git pull origin main
+#           cd ../
+#           sudo docker build ers -t ers:Latest
           
