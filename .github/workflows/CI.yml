@@ -30,6 +30,7 @@ jobs:
           cd project1/ers
           bundle exec rubocop --auto-correct
           continue-on-error: true
+          
       - name: Run Unit Tests
         run: |
           cd project1/ers
