@@ -56,3 +56,9 @@ gem "pg", "~> 1.4"
 gem 'simplecov', require: false, group: :test
 
 gem 'dotenv-rails'
+
+gem 'rubocop'
+
+gem 'rubocop-rails'
+
+gem 'brakeman'
