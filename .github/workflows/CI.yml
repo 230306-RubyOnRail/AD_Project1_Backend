@@ -34,8 +34,8 @@ jobs:
           bundler-cache: true
       - name: Install Dependencies
         run: |
-          Gem install bundler
-          Bundle install --jobs 4 --retry 3
+          gem install bundler
+          bundle install --jobs 4 --retry 3
       - name: Run Rubocop
         run: bundle exec rubocop --auto-correct
       - name: Run Unit Tests
