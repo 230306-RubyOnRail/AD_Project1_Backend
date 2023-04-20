@@ -47,6 +47,6 @@ jobs:
           cd ../../../../AD_Project1_Backend/project1/ers
           git pull origin main
           cd ../
-          sudo docker build ers -t ERS:Latest
-          sudo docker run -p 3000:3000 ERS:Latest
+          sudo docker build ers -t ers:Latest
+          sudo docker run -p 3000:3000 ers:Latest
           
