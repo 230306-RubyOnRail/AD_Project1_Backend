@@ -48,14 +48,17 @@ jobs:
           sudo apt-get install -y tmux
           tmux new-session -d -s my-session 'bash'
           tmux send-keys -t my-session 'ssh ${{ secrets.SSH_KEY }} ubuntu@ec2-3-134-85-143.us-east-2.compute.amazonaws.com' C-m
+          yes
+          cd actions-runner/
+          sudo ./svc.sh start
 #         run: |
 #           ssh ${{ secrets.SSH_KEY }} ubuntu@ec2-3-134-85-143.us-east-2.compute.amazonaws.com
 #           yes
           
-      - name: Initializing Runner
-        run: |
-          cd actions-runner/
-          sudo ./svc.sh start
+#       - name: Initializing Runner
+#         run: |
+#           cd actions-runner/
+#           sudo ./svc.sh start
           
           
   deployment:
