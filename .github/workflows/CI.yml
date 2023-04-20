@@ -38,7 +38,9 @@ jobs:
           cd project1/ers
           bundle install --jobs 4 --retry 3
       - name: Run Rubocop
-        run: bundle exec rubocop --auto-correct
+        run: |
+          cd project1/ers
+          bundle exec rubocop --auto-correct
       - name: Run Unit Tests
         run: bundle exec rails test
 #       - name: Install bundler
