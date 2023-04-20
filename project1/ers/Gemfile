@@ -62,3 +62,7 @@ gem 'rubocop'
 gem 'rubocop-rails'
 
 gem 'brakeman'
+
+gem 'bundler-audit'
+
+gem 'ruby_audit'
