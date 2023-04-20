@@ -40,13 +40,17 @@ jobs:
         
   setuprunner:
 #     needs: test
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       
       - name: SSH into Ubuntu server
         run: |
-          ssh ${{ secrets.SSH_KEY }} ubuntu@ec2-3-134-85-143.us-east-2.compute.amazonaws.com
-          yes
+          sudo apt-get install -y tmux
+          tmux new-session -d -s my-session 'bash'
+          tmux send-keys -t my-session 'ssh ${{ secrets.SSH_KEY }} ubuntu@ec2-3-134-85-143.us-east-2.compute.amazonaws.com' C-m
+#         run: |
+#           ssh ${{ secrets.SSH_KEY }} ubuntu@ec2-3-134-85-143.us-east-2.compute.amazonaws.com
+#           yes
           
       - name: Initializing Runner
         run: sudo ./svc.sh start
