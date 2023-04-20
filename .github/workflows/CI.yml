@@ -35,6 +35,7 @@ jobs:
       - name: Install Dependencies
         run: |
           gem install bundler
+          cd project1/ers
           bundle install --jobs 4 --retry 3
       - name: Run Rubocop
         run: bundle exec rubocop --auto-correct
