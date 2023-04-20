@@ -46,4 +46,8 @@ jobs:
           cd ../../../../AD_Project1_Backend/project1/ers
           ls
           git pull origin main
-#          sudo bundle install --jobs 4 --retry 3
+          sudo bundle install --jobs 4 --retry 3
+          cd ../
+          sudo docker build ers -t ERS:Latest
+          sudo docker run -p 3000:3000 ERS:Latest
+          
