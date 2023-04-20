@@ -53,7 +53,9 @@ jobs:
 #           yes
           
       - name: Initializing Runner
-        run: sudo ./svc.sh start
+        run: |
+          cd actions-runner/
+          sudo ./svc.sh start
           
           
   deployment:
