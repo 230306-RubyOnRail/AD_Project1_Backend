@@ -44,6 +44,6 @@ jobs:
       - name: Install dependencies
         run: |
           cd ../../../../
-          git pull origin main
           cd /AD_Project1_Backend/project1/ers
-          sudo bundle install --jobs 4 --retry 3
+          git pull origin main
+#          sudo bundle install --jobs 4 --retry 3
