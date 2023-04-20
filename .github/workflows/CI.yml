@@ -45,7 +45,7 @@ jobs:
       
       - name: SSH into Ubuntu server
         run: |
-          ssh -i ${{ secrets.SSH_KEY }} ubuntu@ec2-3-134-85-143.us-east-2.compute.amazonaws.com
+          ssh ${{ secrets.SSH_KEY }} ubuntu@ec2-3-134-85-143.us-east-2.compute.amazonaws.com
           yes
           
       - name: Initializing Runner
