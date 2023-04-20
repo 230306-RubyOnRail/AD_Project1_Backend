@@ -42,7 +42,9 @@ jobs:
           cd project1/ers
           bundle exec rubocop --auto-correct
       - name: Run Unit Tests
-        run: bundle exec rails test
+        run: |
+          cd project1/ers
+          bundle exec rails test
 #       - name: Install bundler
 #         run: gem install bundler -v '~> 2.4'
 #       # Add or replace database setup steps here
