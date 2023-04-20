@@ -44,5 +44,6 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get install bundler
+          cd ../../../
           cd AD_Project1_Backend/project1/ers
           sudo bundle install --jobs 4 --retry 3
