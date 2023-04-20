@@ -40,12 +40,11 @@ jobs:
         
   setuprunner:
 #     needs: test
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       
       - name: SSH into Ubuntu server
         run: |
-          shell: bash
           ssh ${{ secrets.SSH_KEY }} ubuntu@ec2-3-134-85-143.us-east-2.compute.amazonaws.com
           yes
           
