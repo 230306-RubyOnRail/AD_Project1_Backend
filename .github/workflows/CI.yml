@@ -43,6 +43,6 @@ jobs:
     steps:
       - name: Install dependencies
         run: |
-          gem install bundler
+          sudo apt-get install bundler
           cd AD_Project1_Backend/project1/ers
-          bundle install --jobs 4 --retry 3
+          sudo bundle install --jobs 4 --retry 3
