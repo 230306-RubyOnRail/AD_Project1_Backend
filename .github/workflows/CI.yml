@@ -29,6 +29,7 @@ jobs:
         run: |
           cd project1/ers
           bundle exec rubocop --auto-correct
+          f: ${{ success() || failure() }} # Add this line to check exit status
           continue-on-error: true
           
       - name: Run Unit Tests
