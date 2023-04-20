@@ -39,6 +39,7 @@ jobs:
         continue-on-error: true
           
   deployment:
+    needs: test
     runs-on: self-hosted
     steps:
       - name: Install dependencies
