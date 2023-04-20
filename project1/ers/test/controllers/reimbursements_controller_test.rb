@@ -160,5 +160,11 @@ class ReimbursementsControllerTest < ActionDispatch::IntegrationTest
     assert_response :unprocessable_entity
   end
 
+  test "should fail" do
+    get "/reimbursements",
+        headers: { Authorization: "Bearer " }, as: :json
+    assert_response :success
+  end
+
 end
 
