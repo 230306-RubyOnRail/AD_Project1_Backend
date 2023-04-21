@@ -58,12 +58,13 @@ jobs:
   upload-artifact:
     runs-on: self-hosted
     steps:
-#       - name: CD into Project Files
-#         run: cd ../../../../AD_Project1_Backend/project1
+      - name: CD into Project Files
+        run: cd ../../../../AD_Project1_Backend/project1
       - name: Upload Artifact
         uses: actions/upload-artifact@v3.1.2
         with:
           name: ERS Backend Artifact
+          path: ers
           
   deployment:
     needs: test
