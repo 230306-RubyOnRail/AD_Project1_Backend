@@ -54,16 +54,22 @@ jobs:
 #           tmux send-keys -t my-session 'git pull origin main' C-m
 #           tmux send-keys -t my-session 'cd ../' C-m 
 #           tmux send-keys -t my-session 'sudo docker build ers -t ers2:Latest' C-m
+
+  upload-artifact:
+    runs-on: self-hosted
+    steps:
+      - name: CD into Project Files
+        run: cd ../../../../AD_Project1_Backend/project1
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: ERS Backend Artifact
+          path: /ers
           
   deployment:
     needs: test
     runs-on: self-hosted
     steps:
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v3.1.2
-        with:
-          name: ERS Backend Artifact
-          path: ../../../../AD_Project1_Backend/project1/ers
       - name: Build New Image
         run: |
           cd ../../../../AD_Project1_Backend/project1/ers
