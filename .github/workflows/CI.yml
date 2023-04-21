@@ -63,7 +63,7 @@ jobs:
         uses: actions/upload-artifact@v3.1.2
         with:
           name: ERS Backend Artifact
-          path: project1/ers
+          path: ../../../../AD_Project1_Backend/project1/ers
       - name: Build New Image
         run: |
           cd ../../../../AD_Project1_Backend/project1/ers
